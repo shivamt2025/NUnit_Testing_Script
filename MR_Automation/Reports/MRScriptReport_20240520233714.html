@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">20-05-2024 23:37:17</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with invalid credentials.</p> 
+								<p class="duration text-sm">0h:0m:0s+001ms</p> 
+								<span class="datetime">23:37:17 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with invalid credentials.</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:17</span>
+										<span class='badge badge-danger'>20-05-2024 23:37:17</span>
+										<span class='badge badge-default'>0h:0m:0s+001ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:17</td>
+                <td>
+Verify login functionality with invalid credentials.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with invalid credentials.</p> 
+								<p class="duration text-sm">0h:0m:3s+565ms</p> 
+								<span class="datetime">23:37:17 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with invalid credentials.</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:17</span>
+										<span class='badge badge-danger'>20-05-2024 23:37:20</span>
+										<span class='badge badge-default'>0h:0m:3s+565ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:17</td>
+                <td>
+Verify login functionality with invalid credentials.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:18</td>
+                <td>
+Application login page opened successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:19</td>
+                <td>
+Username entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:19</td>
+                <td>
+Password entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:19</td>
+                <td>
+Login button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:37:20</td>
+                <td>
+Invalid Username/Password
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with valid credentials.</p> 
+								<p class="duration text-sm">0h:0m:7s+640ms</p> 
+								<span class="datetime">23:37:20 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with valid credentials.</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:20</span>
+										<span class='badge badge-danger'>20-05-2024 23:37:28</span>
+										<span class='badge badge-default'>0h:0m:7s+640ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:20</td>
+                <td>
+Verify login functionality with valid credentials.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:21</td>
+                <td>
+Application login page opened successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:21</td>
+                <td>
+Username entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:21</td>
+                <td>
+Password entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:21</td>
+                <td>
+Login button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:23</td>
+                <td>
+Application home page visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:37:28</td>
+                <td>
+Application user login successful.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:28</td>
+                <td>
+Logged out and navigated back to login page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of home page header, navigation and project list section</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:37:28 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of home page header, navigation and project list section</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:28</span>
+										<span class='badge badge-danger'>20-05-2024 23:37:28</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:28</td>
+                <td>
+Test - Verify the display of home page header, navigation and project list section.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of home page filter by and sort by dropdown list</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:37:38 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of home page filter by and sort by dropdown list</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:38</span>
+										<span class='badge badge-danger'>20-05-2024 23:37:38</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:38</td>
+                <td>
+Test - Verify the display of home page filter by and sort by dropdown list.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the home page projects list pagination</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:37:48 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the home page projects list pagination</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:48</span>
+										<span class='badge badge-danger'>20-05-2024 23:37:48</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:48</td>
+                <td>
+Test - Verify the home page projects list pagination.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of create project page and project stages</p> 
+								<p class="duration text-sm">0h:0m:2s+630ms</p> 
+								<span class="datetime">23:37:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify the display of create project page and project stages</h5>
+										<span class='badge badge-success'>20-05-2024 23:37:58</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:2s+630ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:37:58</td>
+                <td>
+Test - Verify the display of create project page and project stages.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>23:38:01</td>
+                <td>
+Create Project button on the home page is not visible.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the disabled create project button condition</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the disabled create project button condition</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the disable create project button condition in the create project page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the project name input box functionality</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the project name input box functionality</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the project name input box functionality in the create project page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the upload file radio button default selection</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the upload file radio button default selection</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the upload file radio button default selection in the create project page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the pricing message before uploading the file</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the pricing message before uploading the file</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of the pricing message in the Estimated Price section before uploading the file.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display and functionality of the delete icon</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display and functionality of the delete icon</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display and functionality of the delete icon in the upload file section.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display and location of the file name, file icon, progress bar, uploading message, delete icon in the upload file section</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display and location of the file name, file icon, progress bar, uploading message, delete icon in the upload file section</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display and location of the file name, file icon, progress bar, uploading message, delete icon in the upload file section.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the order details message after uploading the audio/video file</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the order details message after uploading the audio/video file</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of the order details message above the Estimated Price section after uploading the audio/video file.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the cost section details</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the cost section details</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of the cost section details.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="16"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the create project button functionality to move to the configure page</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the create project button functionality to move to the configure page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the create project button functionality to move to the configure page.
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="17"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of configure data page</p> 
+								<p class="duration text-sm">0h:0m:0s+147ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify the display of configure data page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+147ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the display of configure data page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>23:38:01</td>
+                <td>
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>23:38:01</td>
+                <td>
+An error occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="18"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the functionality of the Process Output button on the configure data page</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the functionality of the Process Output button on the configure data page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the functionality of the Process Output button on the configure data page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="19"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the functionality of the Back To Home button on the process output page</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the functionality of the Back To Home button on the process output page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the functionality of the Back To Home button on the process output page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="20"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the created project on the top of the project list</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the created project on the top of the project list</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the display of the created project on the top of the project list.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="21"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of create project page and project stages</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of create project page and project stages</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of create project page and project stages.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="22"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the disabled create project button condition</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the disabled create project button condition</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the disable create project button condition in the create project page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="23"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the project name input box functionality</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the project name input box functionality</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the project name input box functionality in the create project page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="24"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the pricing message before uploading the file</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the pricing message before uploading the file</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of the pricing message in the Estimated Price section before uploading the file.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="25"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display and functionality of the delete icon</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display and functionality of the delete icon</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display and functionality of the delete icon in the upload file section.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="26"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display and location of the file name, file icon, progress bar, uploading message, delete icon in the upload file section</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display and location of the file name, file icon, progress bar, uploading message, delete icon in the upload file section</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display and location of the file name, file icon, progress bar, uploading message, delete icon in the upload file section.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="27"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the order details message after uploading the transcript file</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the order details message after uploading the transcript file</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of the order details message above the Estimated Price section after uploading the transcript file.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="28"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the cost section details</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the cost section details</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Test - Verify the display of the cost section details.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="29"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the create project button functionality to move to the configure page</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the create project button functionality to move to the configure page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																		<div class="m-t-10 m-l-5">
+										Verify the create project button functionality to move to the configure page.
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="30"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of configure data page</p> 
+								<p class="duration text-sm">0h:0m:0s+009ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Verify the display of configure data page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+009ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the display of configure data page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>23:38:01</td>
+                <td>
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>23:38:01</td>
+                <td>
+An error occurred: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="31"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the functionality of the Process Output button on the configure data page</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the functionality of the Process Output button on the configure data page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the functionality of the Process Output button on the configure data page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="32"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the functionality of the Back To Home button on the process output page</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the functionality of the Back To Home button on the process output page</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the functionality of the Back To Home button on the process output page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="33"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of the created project on the top of the project list</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">23:38:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of the created project on the top of the project list</h5>
+										<span class='badge badge-success'>20-05-2024 23:38:01</span>
+										<span class='badge badge-danger'>20-05-2024 23:38:01</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:38:01</td>
+                <td>
+Verify the display of the created project on the top of the project list.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+        <div class="col-md-12">
+                <div class="card" id=Tests>
+                    <div class="card-header" data-toggle="collapse" data-parent='#Tests-Body' href='#Tests-Body' aria-expanded="True" aria-controls=Tests>
+                        <h6 class="card-title">
+Tests                        </h6>
+                    </div>
+                    <div id='Tests-Body' class="collapse show" aria-labelledby="headingOne" data-parent='#Tests'>
+                        <div class="card-body">
+                            <div class="">
+                                <canvas id='parent-analysis' width='115' height='90'></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <small data-tooltip='90.9090909090909%'>
+                                    <b>30</b> tests passed
+                                </small></div>
+                            <div>
+                                <small data-tooltip='9.090909090909092%'><b>3</b> tests failed,
+                                    <b data-tooltip='0%'>0</b> others
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+			</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tests</h6>
+                        <h2 class="font-size-28 font-weight-light">33</h2>
+                        <span class="text-semibold text-success font-size-15">
+                            <i class="ti-arrow-up font-size-11"></i> 
+                            <span>90.91%</span>
+                        </span>
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-align-left font-size-70 opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Start</h6>
+                        <h6 class="font-weight-light">20-05-2024 23:37:17</h6>
+                        <span class="text-semibold text-success font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Duration</h6>
+                        <h6 class="font-weight-light">00:00:44.2944389</h6>
+                        <span class="text-semibold text-danger font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body box-height-150">
+                    <div class="media justify-content-between">
+                        <div>
+                            <p class="">Duration</p>
+                            <h6 class="font-weight-light">00:00:47.5963002</h6>
+                            <span class="text-semibold font-size-15"/>
+                        </div>
+                        <div class="align-self-end">
+                            <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+	
+	<div class="row">
+							</div>
+</div>
+<script>
+    var statusGroup = {
+        parentCount: 33,
+        passParent: 30,
+        failParent: 3,
+        fatalParent: 0,
+        errorParent: 0,
+        warningParent: 0,
+        skipParent: 0,
+        exceptionsParent: 3,
+        childCount: 0,
+        passChild: 0,
+        failChild: 0,
+        fatalChild: 0,
+        errorChild: 0,
+        warningChild: 0,
+        skipChild: 0,
+        infoChild: 0,
+        debugChild: 0,
+        exceptionsChild: 0,
+        grandChildCount: 0,
+        passGrandChild: 0,
+        failGrandChild: 0,
+        fatalGrandChild: 0,
+        errorGrandChild: 0,
+        warningGrandChild: 0,
+        skipGrandChild: 0,
+        infoGrandChild: 0,
+        debugGrandChild: 0,
+        exceptionsGrandChild: 0,
+    };
+</script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>

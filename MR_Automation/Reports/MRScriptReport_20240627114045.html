@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">27-06-2024 11:40:48</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with valid credentials.</p> 
+								<p class="duration text-sm">0h:0m:9s+538ms</p> 
+								<span class="datetime">11:40:48 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with valid credentials.</h5>
+										<span class='badge badge-success'>27-06-2024 11:40:48</span>
+										<span class='badge badge-danger'>27-06-2024 11:40:58</span>
+										<span class='badge badge-default'>0h:0m:9s+538ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:48</td>
+                <td>
+Verify login functionality with valid credentials.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:53</td>
+                <td>
+Application login page opened successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:53</td>
+                <td>
+Username entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:54</td>
+                <td>
+Password entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:54</td>
+                <td>
+Login button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:56</td>
+                <td>
+Application home page visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:40:58</td>
+                <td>
+Application user login successful.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Search Project</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">11:40:58 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Search Project</h5>
+										<span class='badge badge-success'>27-06-2024 11:40:58</span>
+										<span class='badge badge-danger'>27-06-2024 11:40:58</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:58</td>
+                <td>
+Starting test for searching project.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Click on review</p> 
+								<p class="duration text-sm">0h:0m:8s+519ms</p> 
+								<span class="datetime">11:40:58 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Click on review</h5>
+										<span class='badge badge-success'>27-06-2024 11:40:58</span>
+										<span class='badge badge-danger'>27-06-2024 11:41:07</span>
+										<span class='badge badge-default'>0h:0m:8s+519ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:58</td>
+                <td>
+Starting further tests.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:40:58</td>
+                <td>
+Search query '[Testing]_FlowTest_03-05.v100' entered and search initiated.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:00</td>
+                <td>
+Project selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:04</td>
+                <td>
+Review button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:07</td>
+                <td>
+Review message found in the top bar.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Compare Page</p> 
+								<p class="duration text-sm">0h:3m:1s+333ms</p> 
+								<span class="datetime">11:41:12 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Validate Compare Page</h5>
+										<span class='badge badge-success'>27-06-2024 11:41:12</span>
+										<span class='badge badge-danger'>27-06-2024 11:44:13</span>
+										<span class='badge badge-default'>0h:3m:1s+333ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:12</td>
+                <td>
+Starting test for various compare page functionalities.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:12</td>
+                <td>
+Navigated to compare page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:18</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:23</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:30</td>
+                <td>
+View Viz Clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:33</td>
+                <td>
+Left and Right Filter text extracted.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:33</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:38</td>
+                <td>
+First saved view text extracted: UAE, UK, USA, Female, Male, Male/Female vs UAE, UK, USA, Female: Sub-topics
+view viz
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:41</td>
+                <td>
+Saved View deleted
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:41</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:41:41</td>
+                <td>
+Left filter text matches successfully.Expected: UAE, UK, USA, Female, Male, Male/Female, Actual: UAE, UK, USA, Female, Male, Male/Female
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:41:41</td>
+                <td>
+Right filter text does not match. Expected: UAE, UK, USA, Female: Sub-topics
+view viz, Actual: UAE, UK, USA, Female
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:41</td>
+                <td>
+Areas Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:51</td>
+                <td>
+Number of identical subclasses: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:52</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:52</td>
+                <td>
+Remaining items text: Brands, Entities, Location, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:55</td>
+                <td>
+Areas Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:41:58</td>
+                <td>
+Location  Dropdown 1 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:08</td>
+                <td>
+Number of identical subclasses: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:08</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:10</td>
+                <td>
+Location  Dropdown 1 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:14</td>
+                <td>
+Profile Dropdown 1 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:24</td>
+                <td>
+Number of identical subclasses: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:24</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:26</td>
+                <td>
+Profile  Dropdown 1 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:29</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:34</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:40</td>
+                <td>
+First saved view text extracted: UK, USA, Male, Male/Female vs UAE, UK, USA, Female: Brands, Entities, Location, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:42:40</td>
+                <td>
+Left filter text matches successfully.Expected: UK, USA, Male, Male/Female, Actual: UK, USA, Male, Male/Female
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:42:40</td>
+                <td>
+Right filter text matches successfully.  Expected: UAE, UK, USA, Female, Actual: UAE, UK, USA, Female
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:40</td>
+                <td>
+Main topics: Brands, Entities, Location, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:40</td>
+                <td>
+Sorted main topics: Brands, Entities, Location, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:40</td>
+                <td>
+Sorted remaining items text: Brands, Entities, Location, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:42:40</td>
+                <td>
+Right filter text matches successfully.  Expected: Brands, Entities, Location, Product, Actual: Brands, Entities, Location, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:46</td>
+                <td>
+Saved View deleted
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:46</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:46</td>
+                <td>
+Themes clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:51</td>
+                <td>
+Top-left text extracted: Themes : Discrimination and health outcomes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:42:51</td>
+                <td>
+Area Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:02</td>
+                <td>
+Number of identical subclasses: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:02</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:02</td>
+                <td>
+Remaining items text: Entities
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:05</td>
+                <td>
+Areas Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:08</td>
+                <td>
+Location  Dropdown 1 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:18</td>
+                <td>
+Number of identical subclasses: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:18</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:20</td>
+                <td>
+Location  Dropdown 1 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:24</td>
+                <td>
+Profile Dropdown 1 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:34</td>
+                <td>
+Number of identical subclasses: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:34</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:36</td>
+                <td>
+Profile  Dropdown 1 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:39</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:45</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:50</td>
+                <td>
+First saved view text extracted: UAE, UK, USA, Female, Male, Male/Female vs UAE, UK, USA, Female: Entities within Discrimination and health outcomes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:50</td>
+                <td>
+Sorted main topics: Female, Male, Male/Female, UAE, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:50</td>
+                <td>
+Sorted remaining items text: Female, Male, Male/Female, UAE, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:43:50</td>
+                <td>
+Right filter text matches successfully.  Expected: Female, Male, Male/Female, UAE, UK, USA, Actual: Female, Male, Male/Female, UAE, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:50</td>
+                <td>
+Sorted main topics: Female, UAE, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:50</td>
+                <td>
+Sorted remaining items text: Female, UAE, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:43:50</td>
+                <td>
+Right filter text matches successfully.  Expected: Female, UAE, UK, USA, Actual: Female, UAE, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:50</td>
+                <td>
+Main topics: Entities within Discrimination and health outcomes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>11:43:50</td>
+                <td>
+Topics match successfully. Expected: Entities within Discrimination and health outcomes, Actual: Entities within Discrimination and health outcomes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:57</td>
+                <td>
+Saved View deleted
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:57</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:43:57</td>
+                <td>
+Profile Dropdown 2 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:44:07</td>
+                <td>
+Number of identical subclasses: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:44:08</td>
+                <td>
+Clicked on the All element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:44:10</td>
+                <td>
+Profile  Dropdown 2 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>11:44:13</td>
+                <td>
+Please select different combinations of attributes to compare with
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+        <div class="col-md-12">
+                <div class="card" id=Tests>
+                    <div class="card-header" data-toggle="collapse" data-parent='#Tests-Body' href='#Tests-Body' aria-expanded="True" aria-controls=Tests>
+                        <h6 class="card-title">
+Tests                        </h6>
+                    </div>
+                    <div id='Tests-Body' class="collapse show" aria-labelledby="headingOne" data-parent='#Tests'>
+                        <div class="card-body">
+                            <div class="">
+                                <canvas id='parent-analysis' width='115' height='90'></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <small data-tooltip='75%'>
+                                    <b>3</b> tests passed
+                                </small></div>
+                            <div>
+                                <small data-tooltip='25%'><b>1</b> tests failed,
+                                    <b data-tooltip='0%'>0</b> others
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+			</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tests</h6>
+                        <h2 class="font-size-28 font-weight-light">4</h2>
+                        <span class="text-semibold text-success font-size-15">
+                            <i class="ti-arrow-up font-size-11"></i> 
+                            <span>75%</span>
+                        </span>
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-align-left font-size-70 opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Start</h6>
+                        <h6 class="font-weight-light">27-06-2024 11:40:48</h6>
+                        <span class="text-semibold text-success font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Duration</h6>
+                        <h6 class="font-weight-light">00:03:24.5290795</h6>
+                        <span class="text-semibold text-danger font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body box-height-150">
+                    <div class="media justify-content-between">
+                        <div>
+                            <p class="">Duration</p>
+                            <h6 class="font-weight-light">00:03:29.3623525</h6>
+                            <span class="text-semibold font-size-15"/>
+                        </div>
+                        <div class="align-self-end">
+                            <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+	
+	<div class="row">
+							</div>
+</div>
+<script>
+    var statusGroup = {
+        parentCount: 4,
+        passParent: 3,
+        failParent: 1,
+        fatalParent: 0,
+        errorParent: 0,
+        warningParent: 0,
+        skipParent: 0,
+        exceptionsParent: 1,
+        childCount: 0,
+        passChild: 0,
+        failChild: 0,
+        fatalChild: 0,
+        errorChild: 0,
+        warningChild: 0,
+        skipChild: 0,
+        infoChild: 0,
+        debugChild: 0,
+        exceptionsChild: 0,
+        grandChildCount: 0,
+        passGrandChild: 0,
+        failGrandChild: 0,
+        fatalGrandChild: 0,
+        errorGrandChild: 0,
+        warningGrandChild: 0,
+        skipGrandChild: 0,
+        infoGrandChild: 0,
+        debugGrandChild: 0,
+        exceptionsGrandChild: 0,
+    };
+</script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>

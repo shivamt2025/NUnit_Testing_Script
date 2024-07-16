@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">09-06-2024 16:47:27</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with valid credentials.</p> 
+								<p class="duration text-sm">0h:0m:10s+254ms</p> 
+								<span class="datetime">16:47:27 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with valid credentials.</h5>
+										<span class='badge badge-success'>09-06-2024 16:47:27</span>
+										<span class='badge badge-danger'>09-06-2024 16:47:37</span>
+										<span class='badge badge-default'>0h:0m:10s+254ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:27</td>
+                <td>
+Verify login functionality with valid credentials.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:32</td>
+                <td>
+Application login page opened successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:33</td>
+                <td>
+Username entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:33</td>
+                <td>
+Password entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:33</td>
+                <td>
+Login button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:35</td>
+                <td>
+Application home page visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:37</td>
+                <td>
+Application user login successful.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Search and Analyze Topics</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">16:47:37 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Search and Analyze Topics</h5>
+										<span class='badge badge-success'>09-06-2024 16:47:37</span>
+										<span class='badge badge-danger'>09-06-2024 16:47:37</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:37</td>
+                <td>
+Starting test for searching and analyzing topics.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Analysis Topics</p> 
+								<p class="duration text-sm">0h:0m:9s+643ms</p> 
+								<span class="datetime">16:47:37 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Analysis Topics</h5>
+										<span class='badge badge-success'>09-06-2024 16:47:37</span>
+										<span class='badge badge-danger'>09-06-2024 16:47:47</span>
+										<span class='badge badge-default'>0h:0m:9s+643ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:37</td>
+                <td>
+Starting search operation.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:37</td>
+                <td>
+Search query 'Snacking' entered and search initiated.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:38</td>
+                <td>
+Project selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:38</td>
+                <td>
+Review button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:38</td>
+                <td>
+Review message found in the top bar.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:42</td>
+                <td>
+Analysis topics text clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:44</td>
+                <td>
+Total topics count from UI: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:44</td>
+                <td>
+Dropdown contains 6 topics.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:44</td>
+                <td>
+Actual topics count matches the displayed total count: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:44</td>
+                <td>
+Total topics count from Excel: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:44</td>
+                <td>
+Actual topics count matches the count from the Excel file: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:46</td>
+                <td>
+Topic: pass_through, Count: 63
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:46</td>
+                <td>
+Topic 'pass_through' count matches the expected count from Excel: 63
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:46</td>
+                <td>
+Topic: Attributes in choosing snacks, Count: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:46</td>
+                <td>
+Topic 'Attributes in choosing snacks' count matches the expected count from Excel: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic: Concerns about snacking, Count: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic 'Concerns about snacking' count matches the expected count from Excel: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic: Preferred brands, Count: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic 'Preferred brands' count matches the expected count from Excel: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic: Snack purchasing channels, Count: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic 'Snack purchasing channels' count matches the expected count from Excel: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic: Snacking occasions, Count: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:47</td>
+                <td>
+Topic 'Snacking occasions' count matches the expected count from Excel: 0
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Response Count</p> 
+								<p class="duration text-sm">0h:0m:9s+090ms</p> 
+								<span class="datetime">16:47:47 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Response Count</h5>
+										<span class='badge badge-success'>09-06-2024 16:47:47</span>
+										<span class='badge badge-danger'>09-06-2024 16:47:56</span>
+										<span class='badge badge-default'>0h:0m:9s+090ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:47</td>
+                <td>
+Starting test to verify response count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:47</td>
+                <td>
+Top Picks button switched off.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:49</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:49</td>
+                <td>
+Transcripts option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:51</td>
+                <td>
+Go To element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:53</td>
+                <td>
+Response count for transcript (1) selected: 35
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:56</td>
+                <td>
+Response count for transcript (2) selected: 28
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:56</td>
+                <td>
+Sum of response counts: (63) matches the initial total response count: (63).
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Themes</p> 
+								<p class="duration text-sm">0h:0m:5s+280ms</p> 
+								<span class="datetime">16:47:56 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Themes</h5>
+										<span class='badge badge-success'>09-06-2024 16:47:56</span>
+										<span class='badge badge-danger'>09-06-2024 16:48:01</span>
+										<span class='badge badge-default'>0h:0m:5s+280ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:56</td>
+                <td>
+Starting test to validate themes.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:56</td>
+                <td>
+Themes dropdown clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:56</td>
+                <td>
+Total topics count from UI: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:56</td>
+                <td>
+Dropdown contains 11 topics.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:56</td>
+                <td>
+Actual topics count matches the displayed total count: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:56</td>
+                <td>
+Total themes count from Excel: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:47:56</td>
+                <td>
+Actual themes count matches the count from the Excel file: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:47:58</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: variety of snacks, Count: 29
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'variety of snacks' count matches the expected count from Excel: 29
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: not a fan of snacks, Count: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'not a fan of snacks' count matches the expected count from Excel: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: reliance on tv for snacking, Count: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'reliance on tv for snacking' count matches the expected count from Excel: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: preference for branded stores, Count: 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'preference for branded stores' count matches the expected count from Excel: 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: preference for nuts, Count: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'preference for nuts' count matches the expected count from Excel: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: spicy snack connoisseur, Count: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'spicy snack connoisseur' count matches the expected count from Excel: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: brand loyalty, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'brand loyalty' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: healthier snacking options, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'healthier snacking options' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: preference for local brands, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'preference for local brands' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: comfort food, Count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'comfort food' count matches the expected count from Excel: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme: concern about sugar content, Count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:01</td>
+                <td>
+Theme 'concern about sugar content' count matches the expected count from Excel: 2
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Response Count</p> 
+								<p class="duration text-sm">0h:0m:9s+073ms</p> 
+								<span class="datetime">16:48:01 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Response Count</h5>
+										<span class='badge badge-success'>09-06-2024 16:48:01</span>
+										<span class='badge badge-danger'>09-06-2024 16:48:10</span>
+										<span class='badge badge-default'>0h:0m:9s+073ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Starting test to verify response count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:01</td>
+                <td>
+Attributes option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:03</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:04</td>
+                <td>
+Transcripts option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:06</td>
+                <td>
+Go To element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:08</td>
+                <td>
+Response count for transcript (1) selected: 13
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:10</td>
+                <td>
+Response count for transcript (2) selected: 16
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:10</td>
+                <td>
+Sum of response counts: (29) matches the initial total response count: (29).
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Snacks</p> 
+								<p class="duration text-sm">0h:0m:5s+287ms</p> 
+								<span class="datetime">16:48:10 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Snacks</h5>
+										<span class='badge badge-success'>09-06-2024 16:48:10</span>
+										<span class='badge badge-danger'>09-06-2024 16:48:15</span>
+										<span class='badge badge-default'>0h:0m:5s+287ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:10</td>
+                <td>
+Starting test to validate snacks.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:10</td>
+                <td>
+Themes dropdown clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:10</td>
+                <td>
+Total topics count from UI: 9
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:11</td>
+                <td>
+Dropdown contains 9 topics.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:11</td>
+                <td>
+Actual topics count matches the displayed total count: 9
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:11</td>
+                <td>
+Total themes count from Excel: 9
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:11</td>
+                <td>
+Actual themes count matches the count from the Excel file: 9
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:13</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Chips, Count: 26
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Chips' count matches the expected count from Excel: 26
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Nuts, Count: 16
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Nuts' count matches the expected count from Excel: 16
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Bars, Count: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Bars' count matches the expected count from Excel: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Fruits, Count: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Fruits' count matches the expected count from Excel: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Biscuits, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Biscuits' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Chocolates, Count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Chocolates' count matches the expected count from Excel: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Iced Tea, Count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Iced Tea' count matches the expected count from Excel: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Cheese crackers, Count: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Cheese crackers' count matches the expected count from Excel: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme: Ice cream, Count: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:15</td>
+                <td>
+Theme 'Ice cream' count matches the expected count from Excel: 1
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Response Count</p> 
+								<p class="duration text-sm">0h:0m:8s+974ms</p> 
+								<span class="datetime">16:48:15 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Response Count</h5>
+										<span class='badge badge-success'>09-06-2024 16:48:15</span>
+										<span class='badge badge-danger'>09-06-2024 16:48:24</span>
+										<span class='badge badge-default'>0h:0m:8s+974ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+Starting test to verify response count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:15</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:16</td>
+                <td>
+Attributes option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:18</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:18</td>
+                <td>
+Transcripts option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:20</td>
+                <td>
+Go To element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:22</td>
+                <td>
+Response count for transcript (1) selected: 15
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:24</td>
+                <td>
+Response count for transcript (2) selected: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>16:48:24</td>
+                <td>
+Sum of response counts: (26) matches the initial total response count: (26).
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Generate and Download PPT</p> 
+								<p class="duration text-sm">0h:0m:21s+633ms</p> 
+								<span class="datetime">16:48:24 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Generate and Download PPT</h5>
+										<span class='badge badge-success'>09-06-2024 16:48:24</span>
+										<span class='badge badge-danger'>09-06-2024 16:48:46</span>
+										<span class='badge badge-default'>0h:0m:21s+633ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:24</td>
+                <td>
+Starting test for generating and downloading PPT.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:25</td>
+                <td>
+Navigated to configure page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>16:48:25</td>
+                <td>
+Generate PPT button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>16:48:46</td>
+                <td>
+An error occurred: Timed out after 20 seconds
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+        <div class="col-md-12">
+                <div class="card" id=Tests>
+                    <div class="card-header" data-toggle="collapse" data-parent='#Tests-Body' href='#Tests-Body' aria-expanded="True" aria-controls=Tests>
+                        <h6 class="card-title">
+Tests                        </h6>
+                    </div>
+                    <div id='Tests-Body' class="collapse show" aria-labelledby="headingOne" data-parent='#Tests'>
+                        <div class="card-body">
+                            <div class="">
+                                <canvas id='parent-analysis' width='115' height='90'></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <small data-tooltip='88.88888888888889%'>
+                                    <b>8</b> tests passed
+                                </small></div>
+                            <div>
+                                <small data-tooltip='11.11111111111111%'><b>1</b> tests failed,
+                                    <b data-tooltip='0%'>0</b> others
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+			</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tests</h6>
+                        <h2 class="font-size-28 font-weight-light">9</h2>
+                        <span class="text-semibold text-success font-size-15">
+                            <i class="ti-arrow-up font-size-11"></i> 
+                            <span>88.89%</span>
+                        </span>
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-align-left font-size-70 opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Start</h6>
+                        <h6 class="font-weight-light">09-06-2024 16:47:27</h6>
+                        <span class="text-semibold text-success font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Duration</h6>
+                        <h6 class="font-weight-light">00:01:19.3845344</h6>
+                        <span class="text-semibold text-danger font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body box-height-150">
+                    <div class="media justify-content-between">
+                        <div>
+                            <p class="">Duration</p>
+                            <h6 class="font-weight-light">00:01:23.3189392</h6>
+                            <span class="text-semibold font-size-15"/>
+                        </div>
+                        <div class="align-self-end">
+                            <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+	
+	<div class="row">
+							</div>
+</div>
+<script>
+    var statusGroup = {
+        parentCount: 9,
+        passParent: 8,
+        failParent: 1,
+        fatalParent: 0,
+        errorParent: 0,
+        warningParent: 0,
+        skipParent: 0,
+        exceptionsParent: 1,
+        childCount: 0,
+        passChild: 0,
+        failChild: 0,
+        fatalChild: 0,
+        errorChild: 0,
+        warningChild: 0,
+        skipChild: 0,
+        infoChild: 0,
+        debugChild: 0,
+        exceptionsChild: 0,
+        grandChildCount: 0,
+        passGrandChild: 0,
+        failGrandChild: 0,
+        fatalGrandChild: 0,
+        errorGrandChild: 0,
+        warningGrandChild: 0,
+        skipGrandChild: 0,
+        infoGrandChild: 0,
+        debugGrandChild: 0,
+        exceptionsGrandChild: 0,
+    };
+</script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>

@@ -1,0 +1,5881 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">11-07-2024 23:05:14</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with valid credentials.</p> 
+								<p class="duration text-sm">0h:0m:11s+362ms</p> 
+								<span class="datetime">23:05:14 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with valid credentials.</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:14</span>
+										<span class='badge badge-danger'>11-07-2024 23:05:26</span>
+										<span class='badge badge-default'>0h:0m:11s+362ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:14</td>
+                <td>
+Verify login functionality with valid credentials.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:15</td>
+                <td>
+Application login page opened successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:20</td>
+                <td>
+Username entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:20</td>
+                <td>
+Password entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:20</td>
+                <td>
+Login button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:24</td>
+                <td>
+Application home page visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Application user login successful.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of home page header, navigation and project list section</p> 
+								<p class="duration text-sm">0h:0m:0s+347ms</p> 
+								<span class="datetime">23:05:26 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of home page header, navigation and project list section</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:26</span>
+										<span class='badge badge-danger'>11-07-2024 23:05:26</span>
+										<span class='badge badge-default'>0h:0m:0s+347ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:26</td>
+                <td>
+Test - Verify the display of home page header, navigation and project list section.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:26</td>
+                <td>
+Application home page is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Header section is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Navigation section is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Project list is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Logo is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Calendar icon is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Home icon is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Profile icon is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:26</td>
+                <td>
+Create project button is visible on the home page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of home page filter by and sort by dropdown list</p> 
+								<p class="duration text-sm">0h:0m:2s+323ms</p> 
+								<span class="datetime">23:05:26 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of home page filter by and sort by dropdown list</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:26</span>
+										<span class='badge badge-danger'>11-07-2024 23:05:28</span>
+										<span class='badge badge-default'>0h:0m:2s+323ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:26</td>
+                <td>
+Test - Verify the display of home page filter by and sort by dropdown list.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:26</td>
+                <td>
+Filter by dropdown is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 8 items as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'All Projects' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Project setup' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Validating' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Processing' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Payment required' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Transcript issue' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Review' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:28</td>
+                <td>
+Filter by dropdown contains 'Reprocessing' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:28</td>
+                <td>
+Sort by dropdown is visible on the home page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the home page projects list pagination</p> 
+								<p class="duration text-sm">0h:0m:3s+432ms</p> 
+								<span class="datetime">23:05:29 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the home page projects list pagination</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:29</span>
+										<span class='badge badge-danger'>11-07-2024 23:05:33</span>
+										<span class='badge badge-default'>0h:0m:3s+432ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:29</td>
+                <td>
+Test - Verify the home page projects list pagination.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:33</td>
+                <td>
+Project list is visible with pagination.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of logo, project name, project scope, calendar icon, home icon, profile icon, page title and note icon on the review page</p> 
+								<p class="duration text-sm">0h:0m:8s+005ms</p> 
+								<span class="datetime">23:05:33 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of logo, project name, project scope, calendar icon, home icon, profile icon, page title and note icon on the review page</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:33</span>
+										<span class='badge badge-danger'>11-07-2024 23:05:41</span>
+										<span class='badge badge-default'>0h:0m:8s+005ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:33</td>
+                <td>
+Test - Verify display of logo, project name, project scope, calendar icon, home icon, profile icon, page title and note icon on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:33</td>
+                <td>
+Filter by dropdown is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:38</td>
+                <td>
+Review button is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:38</td>
+                <td>
+Review button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Navigated to Review page successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Logo is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Project name 'QC_FlowTest_05-06_Test-v10' is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Project scope icon is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Calendar icon is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Home icon is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Profile icon is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Page title 'Review' is visible on the page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+Note icon is visible on the review page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of Summary section header, entity types header</p> 
+								<p class="duration text-sm">0h:0m:1s+576ms</p> 
+								<span class="datetime">23:05:41 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of Summary section header, entity types header</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:41</span>
+										<span class='badge badge-danger'>11-07-2024 23:05:42</span>
+										<span class='badge badge-default'>0h:0m:1s+576ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:41</td>
+                <td>
+Test - Verify display of Summary section header, entity types header.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:41</td>
+                <td>
+'Summary' section header is visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:42</td>
+                <td>
+Summary section 1:'Themes' is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:42</td>
+                <td>
+Summary section 1: 'Themes' is expanded by default.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:42</td>
+                <td>
+'Download Summary Report' section download link is visible on the review page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of Analyze by section header, entity types, and entity type values count</p> 
+								<p class="duration text-sm">0h:1m:46s+547ms</p> 
+								<span class="datetime">23:05:42 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of Analyze by section header, entity types, and entity type values count</h5>
+										<span class='badge badge-success'>11-07-2024 23:05:42</span>
+										<span class='badge badge-danger'>11-07-2024 23:07:29</span>
+										<span class='badge badge-default'>0h:1m:46s+547ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:05:42</td>
+                <td>
+Test - Verify display of Analyze by section header, entity types, and entity type values count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:42</td>
+                <td>
+'Analyze by' section header visible on the review page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:05:56</td>
+                <td>
+Visible Entity Type: 'Themes' with count '24'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:23</td>
+                <td>
+'Themes header count 24 matches with the visible list item count 24'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:23</td>
+                <td>
+Visible Entity Type: 'a' with count '3'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:28</td>
+                <td>
+'a header count 3 matches with the visible list item count 3'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:29</td>
+                <td>
+Visible Entity Type: 'aaa' with count '2'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:33</td>
+                <td>
+'aaa header count 2 matches with the visible list item count 2'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:33</td>
+                <td>
+Visible Entity Type: 'Location' with count '6'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:41</td>
+                <td>
+'Location header count 6 matches with the visible list item count 6'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:42</td>
+                <td>
+Visible Entity Type: 'Organization' with count '5'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:49</td>
+                <td>
+'Organization header count 5 matches with the visible list item count 5'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:06:49</td>
+                <td>
+Visible Entity Type: 'Product' with count '37'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:07:29</td>
+                <td>
+'Product header count 37 matches with the visible list item count 37'
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of Analyze by entity type values and count</p> 
+								<p class="duration text-sm">0h:2m:12s+041ms</p> 
+								<span class="datetime">23:07:29 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of Analyze by entity type values and count</h5>
+										<span class='badge badge-success'>11-07-2024 23:07:29</span>
+										<span class='badge badge-danger'>11-07-2024 23:09:41</span>
+										<span class='badge badge-default'>0h:2m:12s+041ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:07:29</td>
+                <td>
+Verify display of Analyze by entity type values and count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:09</td>
+                <td>
+Visible entity type value: 'Quantity
+(25 of 25)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:09</td>
+                <td>
+Quantity
+(25 of 25): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:09</td>
+                <td>
+Quantity
+(25 of 25): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:09</td>
+                <td>
+Quantity
+(25 of 25): first count: 25 matches with the second count: 25
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:12</td>
+                <td>
+Visible entity type value: 'Quality
+(23 of 23)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:12</td>
+                <td>
+Quality
+(23 of 23): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:12</td>
+                <td>
+Quality
+(23 of 23): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:12</td>
+                <td>
+Quality
+(23 of 23): first count: 23 matches with the second count: 23
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:19</td>
+                <td>
+Visible entity type value: 'caulking materials
+(8 of 8)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:19</td>
+                <td>
+caulking materials
+(8 of 8): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:19</td>
+                <td>
+caulking materials
+(8 of 8): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:19</td>
+                <td>
+caulking materials
+(8 of 8): first count: 8 matches with the second count: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:22</td>
+                <td>
+Visible entity type value: 'water
+(4 of 4)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:22</td>
+                <td>
+water
+(4 of 4): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:22</td>
+                <td>
+water
+(4 of 4): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:22</td>
+                <td>
+water
+(4 of 4): first count: 4 matches with the second count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:28</td>
+                <td>
+Visible entity type value: 'windex
+(2 of 2)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:28</td>
+                <td>
+windex
+(2 of 2): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:28</td>
+                <td>
+windex
+(2 of 2): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:28</td>
+                <td>
+windex
+(2 of 2): first count: 2 matches with the second count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:31</td>
+                <td>
+Visible entity type value: 'aa
+(1 of 1)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:31</td>
+                <td>
+aa
+(1 of 1): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:31</td>
+                <td>
+aa
+(1 of 1): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:31</td>
+                <td>
+aa
+(1 of 1): first count: 1 matches with the second count: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:41</td>
+                <td>
+Visible entity type value: 'connecticut cities
+(7 of 7)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:41</td>
+                <td>
+connecticut cities
+(7 of 7): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:41</td>
+                <td>
+connecticut cities
+(7 of 7): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:42</td>
+                <td>
+connecticut cities
+(7 of 7): first count: 7 matches with the second count: 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:44</td>
+                <td>
+Visible entity type value: 'cities
+(5 of 5)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:44</td>
+                <td>
+cities
+(5 of 5): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:44</td>
+                <td>
+cities
+(5 of 5): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:44</td>
+                <td>
+cities
+(5 of 5): first count: 5 matches with the second count: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:53</td>
+                <td>
+Visible entity type value: 'companies
+(27 of 27)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:53</td>
+                <td>
+companies
+(27 of 27): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:54</td>
+                <td>
+companies
+(27 of 27): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:54</td>
+                <td>
+companies
+(27 of 27): first count: 27 matches with the second count: 27
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:56</td>
+                <td>
+Visible entity type value: 'lumber industry
+(27 of 27)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:56</td>
+                <td>
+lumber industry
+(27 of 27): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:56</td>
+                <td>
+lumber industry
+(27 of 27): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:08:56</td>
+                <td>
+lumber industry
+(27 of 27): first count: 27 matches with the second count: 27
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:38</td>
+                <td>
+Visible entity type value: 'construction adhesives
+(92 of 92)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:38</td>
+                <td>
+construction adhesives
+(92 of 92): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:38</td>
+                <td>
+construction adhesives
+(92 of 92): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:38</td>
+                <td>
+construction adhesives
+(92 of 92): first count: 92 matches with the second count: 92
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:41</td>
+                <td>
+Visible entity type value: 'firearms
+(92 of 92)'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:41</td>
+                <td>
+firearms
+(92 of 92): Hide icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:41</td>
+                <td>
+firearms
+(92 of 92): Edit icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:09:41</td>
+                <td>
+firearms
+(92 of 92): first count: 92 matches with the second count: 92
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of intersection bubble and its elements</p> 
+								<p class="duration text-sm">0h:1m:58s+734ms</p> 
+								<span class="datetime">23:09:41 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of intersection bubble and its elements</h5>
+										<span class='badge badge-success'>11-07-2024 23:09:41</span>
+										<span class='badge badge-danger'>11-07-2024 23:11:40</span>
+										<span class='badge badge-default'>0h:1m:58s+734ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:09:41</td>
+                <td>
+Verify display of intersection bubble and its elements.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section is visible for 'Quantity' with text: Has Overlapping
+conversations with (18)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section header is visible as: 'Themes: Quantity'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section list items count 18 matches with the count on the bubble header 18.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section drop down is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section drop down is enabled.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:21</td>
+                <td>
+Intersection Bubble section drop down list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section is visible for 'caulking materials' with text: Has Overlapping
+conversations with (10)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section header is visible as: 'a: caulking materials'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section list items count 10 matches with the count on the bubble header 10.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section drop down is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section drop down is enabled.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:29</td>
+                <td>
+Intersection Bubble section drop down list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section is visible for 'windex' with text: Has Overlapping
+conversations with (6)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section header is visible as: 'aaa: windex'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section list items count 6 matches with the count on the bubble header 6.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section drop down is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section drop down is enabled.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:36</td>
+                <td>
+Intersection Bubble section drop down list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section is visible for 'connecticut cities' with text: Has Overlapping
+conversations with (3)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section header is visible as: 'Location: connecticut cities'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section list items count 3 matches with the count on the bubble header 3.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section drop down is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section drop down is enabled.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:47</td>
+                <td>
+Intersection Bubble section drop down list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section is visible for 'companies' with text: Has Overlapping
+conversations with (14)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section header is visible as: 'Organization: companies'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section list items count 14 matches with the count on the bubble header 14.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section drop down is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section drop down is enabled.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:10:57</td>
+                <td>
+Intersection Bubble section drop down list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section is visible for 'construction adhesives' with text: Has Overlapping
+conversations with (25)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section header is visible as: 'Product: construction adhesives'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section list is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section list items count 25 matches with the count on the bubble header 25.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section drop down is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section drop down is enabled.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:11:40</td>
+                <td>
+Intersection Bubble section drop down list is visible.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of Response section and count</p> 
+								<p class="duration text-sm">0h:1m:59s+882ms</p> 
+								<span class="datetime">23:11:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of Response section and count</h5>
+										<span class='badge badge-success'>11-07-2024 23:11:40</span>
+										<span class='badge badge-danger'>11-07-2024 23:13:40</span>
+										<span class='badge badge-default'>0h:1m:59s+882ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:11:40</td>
+                <td>
+Verify display of Response section and count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:12:20</td>
+                <td>
+Top picks toggle is ON by default.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:12:20</td>
+                <td>
+Top picks toggle clicked and turned OFF.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:23</td>
+                <td>
+Response header is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:23</td>
+                <td>
+Entity type value count 25 matches with the response count25
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:12:31</td>
+                <td>
+Top picks toggle is  OFF.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:31</td>
+                <td>
+Response header is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:31</td>
+                <td>
+Entity type value count 8 matches with the response count 8.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:12:37</td>
+                <td>
+Top picks toggle is  OFF.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:37</td>
+                <td>
+Response header is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:37</td>
+                <td>
+Entity type value count 2 matches with the response count 2.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:12:48</td>
+                <td>
+Top picks toggle is  OFF.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:48</td>
+                <td>
+Response header is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:48</td>
+                <td>
+Entity type value count 7 matches with the response count 7.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:12:57</td>
+                <td>
+Top picks toggle is  OFF.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:57</td>
+                <td>
+Response header is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:12:57</td>
+                <td>
+Entity type value count 27 matches with the response count 27.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:40</td>
+                <td>
+Top picks toggle is  OFF.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:40</td>
+                <td>
+Response header is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:40</td>
+                <td>
+Entity type value count 92 matches with the response count 92.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of Preview section and count</p> 
+								<p class="duration text-sm">0h:0m:18s+592ms</p> 
+								<span class="datetime">23:13:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of Preview section and count</h5>
+										<span class='badge badge-success'>11-07-2024 23:13:40</span>
+										<span class='badge badge-danger'>11-07-2024 23:13:58</span>
+										<span class='badge badge-default'>0h:0m:18s+592ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:40</td>
+                <td>
+Verify display of Preview section and count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:40</td>
+                <td>
+Preview icon is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:43</td>
+                <td>
+Preview section is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:48</td>
+                <td>
+Preview cancel button is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:48</td>
+                <td>
+Preview cancel button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:58</td>
+                <td>
+Preview section is closed.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of View By filter</p> 
+								<p class="duration text-sm">0h:0m:0s+047ms</p> 
+								<span class="datetime">23:13:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of View By filter</h5>
+										<span class='badge badge-success'>11-07-2024 23:13:58</span>
+										<span class='badge badge-danger'>11-07-2024 23:13:58</span>
+										<span class='badge badge-default'>0h:0m:0s+047ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:58</td>
+                <td>
+Verify display of View By filter.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:58</td>
+                <td>
+View By filter is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:58</td>
+                <td>
+View By filter label is visible.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of Attributes filter</p> 
+								<p class="duration text-sm">0h:0m:0s+100ms</p> 
+								<span class="datetime">23:13:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of Attributes filter</h5>
+										<span class='badge badge-success'>11-07-2024 23:13:58</span>
+										<span class='badge badge-danger'>11-07-2024 23:13:58</span>
+										<span class='badge badge-default'>0h:0m:0s+100ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:58</td>
+                <td>
+Verify display of Attributes filter.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:58</td>
+                <td>
+Attributes filter is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:13:58</td>
+                <td>
+Attributes filter label is visible.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Search Project</p> 
+								<p class="duration text-sm">0h:0m:0s+202ms</p> 
+								<span class="datetime">23:13:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Search Project</h5>
+										<span class='badge badge-success'>11-07-2024 23:13:58</span>
+										<span class='badge badge-danger'>11-07-2024 23:13:59</span>
+										<span class='badge badge-default'>0h:0m:0s+202ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:58</td>
+                <td>
+Starting test for searching project.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:59</td>
+                <td>
+home button clicked
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Review Button</p> 
+								<p class="duration text-sm">0h:0m:8s+504ms</p> 
+								<span class="datetime">23:13:59 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Review Button</h5>
+										<span class='badge badge-success'>11-07-2024 23:13:59</span>
+										<span class='badge badge-danger'>11-07-2024 23:14:08</span>
+										<span class='badge badge-default'>0h:0m:8s+504ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:59</td>
+                <td>
+Starting further tests.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:13:59</td>
+                <td>
+Search query 'QC_FlowTest_05-06_Test-v10' entered and search initiated.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:01</td>
+                <td>
+Project selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:04</td>
+                <td>
+Review button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:08</td>
+                <td>
+Review message found in the top bar.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="16"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name"> Validate Topic 1</p> 
+								<p class="duration text-sm">0h:0m:5s+876ms</p> 
+								<span class="datetime">23:14:13 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass"> Validate Topic 1</h5>
+										<span class='badge badge-success'>11-07-2024 23:14:13</span>
+										<span class='badge badge-danger'>11-07-2024 23:14:18</span>
+										<span class='badge badge-default'>0h:0m:5s+876ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:13</td>
+                <td>
+Starting test to validate Topic 1.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:13</td>
+                <td>
+Analysis topics text clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:15</td>
+                <td>
+Total topics count from UI: 24
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:15</td>
+                <td>
+Topic Name from UI: Themes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:15</td>
+                <td>
+Dropdown contains 24 topics.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:15</td>
+                <td>
+Actual topics count matches the displayed total count: 24
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:15</td>
+                <td>
+Total topics count from Excel: 24
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:15</td>
+                <td>
+Actual topics count matches the count from the Excel file: 24
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: Quantity, Count: 25
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'Quantity' count matches the expected count from Excel: 25
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: Quality, Count: 23
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'Quality' count matches the expected count from Excel: 23
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: Adhesion, Count: 22
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'Adhesion' count matches the expected count from Excel: 22
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: Affordability, Count: 20
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'Affordability' count matches the expected count from Excel: 20
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: crew windows, Count: 20
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'crew windows' count matches the expected count from Excel: 20
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: crew doors, Count: 19
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'crew doors' count matches the expected count from Excel: 19
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic: disposable tips, Count: 14
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:17</td>
+                <td>
+Topic 'disposable tips' count matches the expected count from Excel: 14
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: Ease of use, Count: 14
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'Ease of use' count matches the expected count from Excel: 14
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: caulk gun, Count: 12
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'caulk gun' count matches the expected count from Excel: 12
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: builders clock, Count: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'builders clock' count matches the expected count from Excel: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: replacing subfloors, Count: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'replacing subfloors' count matches the expected count from Excel: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: engineered products, Count: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'engineered products' count matches the expected count from Excel: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: No relevant information., Count: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'No relevant information.' count matches the expected count from Excel: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: experience and capability, Count: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'experience and capability' count matches the expected count from Excel: 6
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: issues with new glue tube, Count: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'issues with new glue tube' count matches the expected count from Excel: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: smaller one for clear silicone, Count: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'smaller one for clear silicone' count matches the expected count from Excel: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: specialty item for framing, Count: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'specialty item for framing' count matches the expected count from Excel: 5
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: bottom of the doors, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'bottom of the doors' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: framing crew, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'framing crew' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: builders stuff, Count: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'builders stuff' count matches the expected count from Excel: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: clear silicone, Count: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'clear silicone' count matches the expected count from Excel: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: personal experience, Count: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'personal experience' count matches the expected count from Excel: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: trailer storage, Count: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'trailer storage' count matches the expected count from Excel: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic: project manager, Count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:18</td>
+                <td>
+Topic 'project manager' count matches the expected count from Excel: 2
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="17"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Response Count</p> 
+								<p class="duration text-sm">0h:0m:11s+537ms</p> 
+								<span class="datetime">23:14:18 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Response Count</h5>
+										<span class='badge badge-success'>11-07-2024 23:14:18</span>
+										<span class='badge badge-danger'>11-07-2024 23:14:30</span>
+										<span class='badge badge-default'>0h:0m:11s+537ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:18</td>
+                <td>
+Starting test to verify response count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:19</td>
+                <td>
+Top Picks button switched off.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:21</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:21</td>
+                <td>
+Transcripts option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:23</td>
+                <td>
+Go To element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:25</td>
+                <td>
+Response count for transcript (1) selected: 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:28</td>
+                <td>
+Response count for transcript (2) selected: 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:30</td>
+                <td>
+Response count for transcript (3) selected: 11
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:30</td>
+                <td>
+Sum of response counts: (25) matches the initial total response count: (25).
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="18"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Topic 2</p> 
+								<p class="duration text-sm">0h:0m:5s+172ms</p> 
+								<span class="datetime">23:14:30 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Topic 2</h5>
+										<span class='badge badge-success'>11-07-2024 23:14:30</span>
+										<span class='badge badge-danger'>11-07-2024 23:14:35</span>
+										<span class='badge badge-default'>0h:0m:5s+172ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:30</td>
+                <td>
+Starting test to validate Topic 2.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:30</td>
+                <td>
+Themes dropdown clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:30</td>
+                <td>
+Total topics count from UI: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:30</td>
+                <td>
+Topic Name from UI: a
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:31</td>
+                <td>
+Dropdown contains 3 topics.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:31</td>
+                <td>
+Actual topics count matches the displayed total count: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:31</td>
+                <td>
+Total themes count from Excel: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:31</td>
+                <td>
+Actual themes count matches the count from the Excel file: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:33</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:35</td>
+                <td>
+Theme: caulking materials, Count: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:35</td>
+                <td>
+Theme 'caulking materials' count matches the expected count from Excel: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:35</td>
+                <td>
+Theme: water, Count: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:35</td>
+                <td>
+Theme 'water' count matches the expected count from Excel: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:35</td>
+                <td>
+Theme: oil, Count: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:35</td>
+                <td>
+Theme 'oil' count matches the expected count from Excel: 1
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="19"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Response Count</p> 
+								<p class="duration text-sm">0h:0m:11s+551ms</p> 
+								<span class="datetime">23:14:35 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Response Count</h5>
+										<span class='badge badge-success'>11-07-2024 23:14:35</span>
+										<span class='badge badge-danger'>11-07-2024 23:14:47</span>
+										<span class='badge badge-default'>0h:0m:11s+551ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:35</td>
+                <td>
+Starting test to verify response count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:35</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:35</td>
+                <td>
+Attributes option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:37</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:38</td>
+                <td>
+Transcripts option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:40</td>
+                <td>
+Go To element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:42</td>
+                <td>
+Response count for transcript (1) selected: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:44</td>
+                <td>
+Response count for transcript (2) selected: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:47</td>
+                <td>
+Response count for transcript (3) selected: 4
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:47</td>
+                <td>
+Sum of response counts: (8) matches the initial total response count: (8).
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="20"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Topic 3</p> 
+								<p class="duration text-sm">0h:0m:5s+444ms</p> 
+								<span class="datetime">23:14:47 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Topic 3</h5>
+										<span class='badge badge-success'>11-07-2024 23:14:47</span>
+										<span class='badge badge-danger'>11-07-2024 23:14:52</span>
+										<span class='badge badge-default'>0h:0m:5s+444ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:47</td>
+                <td>
+Starting test to validate topic  3.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:47</td>
+                <td>
+Themes dropdown clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:47</td>
+                <td>
+Total topics count from UI: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:47</td>
+                <td>
+Topic Name from UI: aaa
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:48</td>
+                <td>
+Dropdown contains 2 topics.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:48</td>
+                <td>
+Actual topics count matches the displayed total count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:48</td>
+                <td>
+Total themes count from Excel: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:48</td>
+                <td>
+Actual themes count matches the count from the Excel file: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:50</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:52</td>
+                <td>
+Theme: windex, Count: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:52</td>
+                <td>
+Theme 'windex' count matches the expected count from Excel: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:52</td>
+                <td>
+Theme: aa, Count: 1
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:14:52</td>
+                <td>
+Theme 'aa' count matches the expected count from Excel: 1
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="21"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify Response Count</p> 
+								<p class="duration text-sm">0h:0m:11s+401ms</p> 
+								<span class="datetime">23:14:52 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify Response Count</h5>
+										<span class='badge badge-success'>11-07-2024 23:14:52</span>
+										<span class='badge badge-danger'>11-07-2024 23:15:04</span>
+										<span class='badge badge-default'>0h:0m:11s+401ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:52</td>
+                <td>
+Starting test to verify response count.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:52</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:52</td>
+                <td>
+Attributes option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:54</td>
+                <td>
+View By element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:55</td>
+                <td>
+Transcripts option selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:57</td>
+                <td>
+Go To element clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:14:59</td>
+                <td>
+Response count for transcript (1) selected: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:01</td>
+                <td>
+Response count for transcript (2) selected: 0
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:04</td>
+                <td>
+Response count for transcript (3) selected: 2
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:15:04</td>
+                <td>
+Sum of response counts: (2) matches the initial total response count: (2).
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="22"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Compare Page</p> 
+								<p class="duration text-sm">0h:2m:46s+523ms</p> 
+								<span class="datetime">23:15:04 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Compare Page</h5>
+										<span class='badge badge-success'>11-07-2024 23:15:04</span>
+										<span class='badge badge-danger'>11-07-2024 23:17:50</span>
+										<span class='badge badge-default'>0h:2m:46s+523ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:04</td>
+                <td>
+Starting test for various compare page functionalities.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:04</td>
+                <td>
+Navigated to compare page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:10</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:16</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:22</td>
+                <td>
+View Viz button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:26</td>
+                <td>
+Left and Right Filter text extracted.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:26</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:31</td>
+                <td>
+First saved view's text extracted: UK, USA, 30, 40 vs UK, 30
+view viz
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:31</td>
+                <td>
+Before: UK, 30
+view viz
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:31</td>
+                <td>
+After: UK, 30
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:32</td>
+                <td>
+Edit clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:35</td>
+                <td>
+Backspace pressed 4 times and Enter key pressed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:36</td>
+                <td>
+Delete button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:39</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:15:39</td>
+                <td>
+Left filter text matches successfully.Expected: UK, USA, 30, 40, Actual: UK, USA, 30, 40
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:15:39</td>
+                <td>
+Right filter text matches successfully.  Expected: UK, 30, Actual: UK, 30
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:40</td>
+                <td>
+Areas Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:50</td>
+                <td>
+Number of subclasses in area dropdown: 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:51</td>
+                <td>
+Unchecked the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:51</td>
+                <td>
+Checked items are: a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:54</td>
+                <td>
+Areas Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:15:58</td>
+                <td>
+Location  Dropdown 1 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:08</td>
+                <td>
+Number of  subclasses in locaation dropdown: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:08</td>
+                <td>
+Unchecked  the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:09</td>
+                <td>
+Unchecked  the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:11</td>
+                <td>
+Location  Dropdown 1 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:14</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:20</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:25</td>
+                <td>
+First saved view text extracted: USA, 40 vs UK, 30: a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:16:25</td>
+                <td>
+Left filter text matches successfully.Expected: USA, 40, Actual: USA, 40
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:16:25</td>
+                <td>
+Right filter text matches successfully.  Expected: UK, 30, Actual: UK, 30
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:25</td>
+                <td>
+Subtopics: a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:25</td>
+                <td>
+Sorted sub topics: a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:25</td>
+                <td>
+Sorted checked optiions are: a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:16:25</td>
+                <td>
+Right filter text matches successfully.  Expected: a, aaa, Location, Organization, Product, Actual: a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:31</td>
+                <td>
+Delete button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:35</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:35</td>
+                <td>
+Themes clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:40</td>
+                <td>
+Identifier text extracted: Themes : Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:40</td>
+                <td>
+Area Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:50</td>
+                <td>
+Number of  subclasses in area dropdown: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:51</td>
+                <td>
+Unchecked the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:51</td>
+                <td>
+Checked options are: Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:54</td>
+                <td>
+Areas Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:16:57</td>
+                <td>
+Location  Dropdown 1 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:07</td>
+                <td>
+Number of  subclasses in location dropdown: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:07</td>
+                <td>
+Unchecked on the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:07</td>
+                <td>
+Unchecked on the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:10</td>
+                <td>
+Location  Dropdown 1 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:13</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:19</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:24</td>
+                <td>
+First saved view text extracted: USA, UK, 30, 40 vs UK, 30: Product within Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:24</td>
+                <td>
+Sorted sub topics: 30, 40, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:24</td>
+                <td>
+Sorted checked items text: 30, 40, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:17:24</td>
+                <td>
+Right filter text matches successfully.  Expected: 30, 40, UK, USA, Actual: 30, 40, UK, USA
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:24</td>
+                <td>
+Sorted sub topics: 30, UK
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:24</td>
+                <td>
+Sorted checked items text: 30, UK
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:17:24</td>
+                <td>
+Right filter text matches successfully.  Expected: 30, UK, Actual: 30, UK
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:24</td>
+                <td>
+Sub topics: Product within Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:17:24</td>
+                <td>
+Sub Topics match successfully. Expected: Product within Quantity, Actual: Product within Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:30</td>
+                <td>
+Delete button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:34</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:34</td>
+                <td>
+Profile Dropdown 2 opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:44</td>
+                <td>
+Number of  subclasses in profile dropdown 2: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:44</td>
+                <td>
+Clicked on the All option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:45</td>
+                <td>
+Clicked on the All option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:47</td>
+                <td>
+Profile  Dropdown 2 closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:50</td>
+                <td>
+Please select different combinations of attributes to compare with
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="23"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Validate Cloud Page</p> 
+								<p class="duration text-sm">0h:2m:26s+119ms</p> 
+								<span class="datetime">23:17:50 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Validate Cloud Page</h5>
+										<span class='badge badge-success'>11-07-2024 23:17:50</span>
+										<span class='badge badge-danger'>11-07-2024 23:20:16</span>
+										<span class='badge badge-default'>0h:2m:26s+119ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:50</td>
+                <td>
+Starting test for various cloud page functionalities.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:17:50</td>
+                <td>
+Navigated to cloud page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:01</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:09</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:14</td>
+                <td>
+First saved view text extracted: 'UK, USA, 30, 40'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:14</td>
+                <td>
+Filter Value extracted: 'UK, USA, 30, 40 : Sub-topics
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:14</td>
+                <td>
+Before comparison - Saved Text: 'UK, USA, 30, 40' (Length: 15), CleanedFirstSavedText: 'UK, USA, 30, 40' (Length: 15)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:18:14</td>
+                <td>
+Left filter text matches successfully. Expected: 'UK, USA, 30, 40', Actual: 'UK, USA, 30, 40'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:15</td>
+                <td>
+View Viz button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:19</td>
+                <td>
+Filter text extracted: UK, USA, 30, 40 : Sub-topics
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:22</td>
+                <td>
+Saved Views button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:28</td>
+                <td>
+Edit clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:31</td>
+                <td>
+Backspace pressed 4 times and Enter key pressed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:35</td>
+                <td>
+Delete button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:39</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:43</td>
+                <td>
+Areas Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:53</td>
+                <td>
+Number of subclasses in area dropdownn 7
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:53</td>
+                <td>
+Clicked on the second element.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:56</td>
+                <td>
+Areas Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:18:59</td>
+                <td>
+Location Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:10</td>
+                <td>
+Number of subclasses in location dropdown: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:10</td>
+                <td>
+Clicked on the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:13</td>
+                <td>
+Location Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:16</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:21</td>
+                <td>
+Saved Views button clicked again.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:22</td>
+                <td>
+New first saved view text extracted: 30, 40 : a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:23</td>
+                <td>
+Top-left text extracted again: 30, 40 : a, aaa, Location, Organization, Product
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:23</td>
+                <td>
+Before comparison - Saved Text: '30, 40 : a, aaa, Location, Organization, Product' (Length: 48), CleanedFirstSavedText: '30, 40 : a, aaa, Location, Organization, Product' (Length: 48)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:19:23</td>
+                <td>
+Left filter text matches successfully. Expected: '30, 40 : a, aaa, Location, Organization, Product', Actual: '30, 40 : a, aaa, Location, Organization, Product'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:24</td>
+                <td>
+Delete button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:28</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:29</td>
+                <td>
+Themes clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:34</td>
+                <td>
+Filter text extracted: Themes : Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:34</td>
+                <td>
+Area Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:44</td>
+                <td>
+Number of  subclasses in area dropdown: 3
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:44</td>
+                <td>
+Clicked on the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:47</td>
+                <td>
+Area Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:19:51</td>
+                <td>
+Location Dropdown opened:
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:01</td>
+                <td>
+Number of subclasses in location dropdown: 8
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:01</td>
+                <td>
+Clicked on the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:01</td>
+                <td>
+Clicked on the second option.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:03</td>
+                <td>
+Location Dropdown closed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:07</td>
+                <td>
+Save View button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:12</td>
+                <td>
+Saved Views button clicked again.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:12</td>
+                <td>
+New first saved view text extracted: UK, USA, 40 : Product within Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:12</td>
+                <td>
+Top-left text extracted again: UK, USA, 40 : Product within Quantity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:12</td>
+                <td>
+Before comparison - Saved Text: '30, 40 : a, aaa, Location, Organization, Product' (Length: 48), CleanedFirstSavedText: '30, 40 : a, aaa, Location, Organization, Product' (Length: 48)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:20:12</td>
+                <td>
+Left filter text matches successfully. Expected: '30, 40 : a, aaa, Location, Organization, Product', Actual: '30, 40 : a, aaa, Location, Organization, Product'
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:13</td>
+                <td>
+Delete button clicked using Actions class.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:16</td>
+                <td>
+Saved view pop up closed
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="24"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Generate and Download PPT</p> 
+								<p class="duration text-sm">0h:2m:1s+550ms</p> 
+								<span class="datetime">23:20:16 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Generate and Download PPT</h5>
+										<span class='badge badge-success'>11-07-2024 23:20:16</span>
+										<span class='badge badge-danger'>11-07-2024 23:22:18</span>
+										<span class='badge badge-default'>0h:2m:1s+550ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:16</td>
+                <td>
+Starting test for generating and downloading PPT.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:16</td>
+                <td>
+Navigated to configure page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:22</td>
+                <td>
+Generate PPT button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:24</td>
+                <td>
+Report name entered: FlowTest_20240711_232022
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:27</td>
+                <td>
+Report description entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:20:27</td>
+                <td>
+Generate PowerPoint button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:19</td>
+                <td>
+Report generation completed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:19</td>
+                <td>
+Clicked on the report link to download.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:21:27</td>
+                <td>
+File downloaded successfully: C:\Users\Shivam Tewari\Downloads\FlowTest_20240711_232022.pptx
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:27</td>
+                <td>
+home button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:32</td>
+                <td>
+Page refreshed
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:33</td>
+                <td>
+Entered search string
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:34</td>
+                <td>
+Clicked the search input.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:35</td>
+                <td>
+Project available for internal review
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:37</td>
+                <td>
+Edit Functionality Opened
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:49</td>
+                <td>
+Added a new project
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:21:52</td>
+                <td>
+Applied Changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:21:52</td>
+                <td>
+Added the new topic successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:22:18</td>
+                <td>
+All values validated successfully.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="25"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Entity Type Master</p> 
+								<p class="duration text-sm">0h:2m:21s+005ms</p> 
+								<span class="datetime">23:22:18 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Entity Type Master</h5>
+										<span class='badge badge-success'>11-07-2024 23:22:18</span>
+										<span class='badge badge-danger'>11-07-2024 23:24:39</span>
+										<span class='badge badge-default'>0h:2m:21s+005ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:18</td>
+                <td>
+Tests For Entity Type Master started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:18</td>
+                <td>
+Renaming test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:28</td>
+                <td>
+Not enough entities
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:28</td>
+                <td>
+Deletion test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:38</td>
+                <td>
+Not enough elements to delete
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:38</td>
+                <td>
+Merge box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:48</td>
+                <td>
+Either not enough elements to merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:48</td>
+                <td>
+Multiple changes test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:48</td>
+                <td>
+Rename box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:58</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:22:58</td>
+                <td>
+Merge rename test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:08</td>
+                <td>
+Rename box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:18</td>
+                <td>
+Not enough elements to merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:18</td>
+                <td>
+Started the rename delete test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:38</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:38</td>
+                <td>
+test for merge delete started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:58</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:23:58</td>
+                <td>
+started the switching to home test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:19</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:19</td>
+                <td>
+switching to tab test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:39</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="26"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Entity Master</p> 
+								<p class="duration text-sm">0h:2m:40s+945ms</p> 
+								<span class="datetime">23:24:39 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Entity Master</h5>
+										<span class='badge badge-success'>11-07-2024 23:24:39</span>
+										<span class='badge badge-danger'>11-07-2024 23:27:20</span>
+										<span class='badge badge-default'>0h:2m:40s+945ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:39</td>
+                <td>
+Tests For Entity Master started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:39</td>
+                <td>
+test for rename started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:49</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:49</td>
+                <td>
+test for deletion started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:59</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:24:59</td>
+                <td>
+checkbox test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:09</td>
+                <td>
+Not enough elemenst
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:09</td>
+                <td>
+test for merge started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:19</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:19</td>
+                <td>
+starting the move test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:29</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:29</td>
+                <td>
+test for rename delete staretd
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:29</td>
+                <td>
+renaming to 571702960
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:39</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:39</td>
+                <td>
+test for merge rename started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:49</td>
+                <td>
+renaming to 645413565
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:59</td>
+                <td>
+Not enough elements to merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:25:59</td>
+                <td>
+started the merge delete test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:26:19</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:26:19</td>
+                <td>
+test for multiple changes started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:26:39</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:26:39</td>
+                <td>
+test for switching to home staretd
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:00</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:00</td>
+                <td>
+test for switching to tab started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:10</td>
+                <td>
+renaming the text
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:20</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="27"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Entity Sentences</p> 
+								<p class="duration text-sm">0h:0m:20s+090ms</p> 
+								<span class="datetime">23:27:20 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Entity Sentences</h5>
+										<span class='badge badge-success'>11-07-2024 23:27:20</span>
+										<span class='badge badge-danger'>11-07-2024 23:27:40</span>
+										<span class='badge badge-default'>0h:0m:20s+090ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:20</td>
+                <td>
+Tests For Entity Sentences started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:20</td>
+                <td>
+test for deletion staretd
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:30</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:30</td>
+                <td>
+test for anchor change started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:40</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="28"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Theme Master</p> 
+								<p class="duration text-sm">0h:0m:55s+568ms</p> 
+								<span class="datetime">23:27:40 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Theme Master</h5>
+										<span class='badge badge-success'>11-07-2024 23:27:40</span>
+										<span class='badge badge-danger'>11-07-2024 23:28:35</span>
+										<span class='badge badge-default'>0h:0m:55s+568ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:40</td>
+                <td>
+Tests For Theme Master started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:40</td>
+                <td>
+test for renaming started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:40</td>
+                <td>
+renaming it to2117508499
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:45</td>
+                <td>
+applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:27:46</td>
+                <td>
+Chnaged the theme successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:46</td>
+                <td>
+test for merging started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:46</td>
+                <td>
+new theme selected
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:48</td>
+                <td>
+applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:48</td>
+                <td>
+Could not merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:48</td>
+                <td>
+test for deletion started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:59</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:59</td>
+                <td>
+test for changing theme started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:59</td>
+                <td>
+clicked the dropdown
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:27:59</td>
+                <td>
+selecetd the new theme
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:02</td>
+                <td>
+applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:02</td>
+                <td>
+Changed the sentiment successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:02</td>
+                <td>
+test for user defined property started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:03</td>
+                <td>
+userdefined box is clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:05</td>
+                <td>
+applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:05</td>
+                <td>
+User-defined property changed succesfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:05</td>
+                <td>
+test for rename delete started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:05</td>
+                <td>
+renamed to 310159425
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:06</td>
+                <td>
+clicked the delete button
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:09</td>
+                <td>
+trying to apply changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:09</td>
+                <td>
+cancelled the changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:09</td>
+                <td>
+Validation message for rename and delete shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:09</td>
+                <td>
+test for rename merge started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:11</td>
+                <td>
+renamed text :564620831
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:13</td>
+                <td>
+new topic for merge selected
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:15</td>
+                <td>
+trying to apply changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:15</td>
+                <td>
+clicked the cancel button
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:15</td>
+                <td>
+Validation message for merge and rename shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:15</td>
+                <td>
+started the merge delete test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:18</td>
+                <td>
+selected the merge option
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:18</td>
+                <td>
+clicked the delete button
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:21</td>
+                <td>
+trying to apply changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:21</td>
+                <td>
+cancelling the changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:21</td>
+                <td>
+Validation message for merge and delete shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:21</td>
+                <td>
+test for multiple changes started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:23</td>
+                <td>
+merge selected
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:24</td>
+                <td>
+delete box selected
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:24</td>
+                <td>
+new renamed text is509019710
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:27</td>
+                <td>
+trying to apply changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:27</td>
+                <td>
+cancelled the changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:27</td>
+                <td>
+Validation message for multiple changes shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:27</td>
+                <td>
+started the switching to home test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:30</td>
+                <td>
+renamed an element
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:31</td>
+                <td>
+clicked the home button
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:31</td>
+                <td>
+cancelled the switching to home action
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:31</td>
+                <td>
+Validation message for switching to home shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:31</td>
+                <td>
+started the switching tab test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:34</td>
+                <td>
+renamed an element
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:35</td>
+                <td>
+continued to switch the tab
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:35</td>
+                <td>
+Validation message for switching to tab shown successfully
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="29"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Theme Sentences</p> 
+								<p class="duration text-sm">0h:0m:21s+850ms</p> 
+								<span class="datetime">23:28:35 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Theme Sentences</h5>
+										<span class='badge badge-success'>11-07-2024 23:28:35</span>
+										<span class='badge badge-danger'>11-07-2024 23:28:57</span>
+										<span class='badge badge-default'>0h:0m:21s+850ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:35</td>
+                <td>
+Tests For Theme Sentences started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:35</td>
+                <td>
+deletion test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:37</td>
+                <td>
+deleted sentenceAnd then the dean actually pressured a PhD student like : " a phd student do not want to do this , a phd student do not want to go public , because a phd student are going to jeopardize the reputation of the faculty and we are all going to get hurt ".
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:37</td>
+                <td>
+delete button selected
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:39</td>
+                <td>
+applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:39</td>
+                <td>
+Successfully deleted
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:39</td>
+                <td>
+staretd the changing of theme of a sentence started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:39</td>
+                <td>
+sentence is And I absolutely follow the frustration of p1,but and p1,but colleagues of having so , and I think p1,but share that with .
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:39</td>
+                <td>
+theme iscommunication issues
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:42</td>
+                <td>
+applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:42</td>
+                <td>
+Successfully changed theme
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:42</td>
+                <td>
+test for multiple changes started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:42</td>
+                <td>
+user defined button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:42</td>
+                <td>
+changed the theme
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:43</td>
+                <td>
+delete button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:45</td>
+                <td>
+trying to apply changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:45</td>
+                <td>
+cancelling the changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:45</td>
+                <td>
+Validation message for multiple changes shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:45</td>
+                <td>
+test for switching to home started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:48</td>
+                <td>
+delete button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:48</td>
+                <td>
+home button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:48</td>
+                <td>
+cancelled the changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:48</td>
+                <td>
+Validation message for switching to home shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:48</td>
+                <td>
+test for switching tab started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:51</td>
+                <td>
+clicked the delete button
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:52</td>
+                <td>
+accepting the prompt to change tabs
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>23:28:52</td>
+                <td>
+Validation message for switching to tab shown successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:52</td>
+                <td>
+home button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:53</td>
+                <td>
+Entered search string
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:55</td>
+                <td>
+Clicked the search input.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:55</td>
+                <td>
+Project available for internal review
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:57</td>
+                <td>
+Edit Functionality Opened
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="30"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Analysis Topics</p> 
+								<p class="duration text-sm">0h:0m:6s+057ms</p> 
+								<span class="datetime">23:28:59 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Analysis Topics</h5>
+										<span class='badge badge-success'>11-07-2024 23:28:59</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:05</span>
+										<span class='badge badge-default'>0h:0m:6s+057ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:28:59</td>
+                <td>
+Tests For Summaries Analysis Topics started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:02</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:05</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="31"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Entities </p> 
+								<p class="duration text-sm">0h:0m:6s+760ms</p> 
+								<span class="datetime">23:29:06 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Entities </h5>
+										<span class='badge badge-success'>11-07-2024 23:29:06</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:13</span>
+										<span class='badge badge-default'>0h:0m:6s+760ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:06</td>
+                <td>
+Tests For Summaries Entities started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:07</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:13</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="32"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Themes </p> 
+								<p class="duration text-sm">0h:0m:6s+771ms</p> 
+								<span class="datetime">23:29:13 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Themes </h5>
+										<span class='badge badge-success'>11-07-2024 23:29:13</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:20</span>
+										<span class='badge badge-default'>0h:0m:6s+771ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:13</td>
+                <td>
+Tests For Themes Entities started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:14</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:20</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="33"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Market </p> 
+								<p class="duration text-sm">0h:0m:2s+109ms</p> 
+								<span class="datetime">23:29:20 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Market </h5>
+										<span class='badge badge-success'>11-07-2024 23:29:20</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:22</span>
+										<span class='badge badge-default'>0h:0m:2s+109ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:20</td>
+                <td>
+Tests For Summaries Market started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:22</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="34"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Report</p> 
+								<p class="duration text-sm">0h:0m:4s+772ms</p> 
+								<span class="datetime">23:29:22 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Report</h5>
+										<span class='badge badge-success'>11-07-2024 23:29:22</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:27</span>
+										<span class='badge badge-default'>0h:0m:4s+772ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:22</td>
+                <td>
+Tests For Reports started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:23</td>
+                <td>
+element click intercepted: Element <div class="bg-[#9747FF] cursor-pointer transform transition duration-300 py-1 px-4 text-white font-normal rounded-lg mx-1 bg-opacity-50">...</div> is not clickable at point (695, 73). Other element would receive the click: <div data-testid="overlay" data-popup="modal" class="popup-overlay " tabindex="-1" style="position: fixed; inset: 0px; display: flex; z-index: 999; pointer-events: auto;">...</div>
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:27</td>
+                <td>
+element click intercepted: Element <button class="bg-[#9747FF] bg-[#808080] py-1 px-5 text-white font-normal text-lg rounded-lg mx-1 cursor-pointer">...</button> is not clickable at point (1444, 120). Other element would receive the click: <div data-testid="overlay" data-popup="modal" class="popup-overlay " tabindex="-1" style="position: fixed; inset: 0px; display: flex; z-index: 999; pointer-events: auto;">...</div>
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="35"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Email</p> 
+								<p class="duration text-sm">0h:0m:14s+637ms</p> 
+								<span class="datetime">23:29:27 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Email</h5>
+										<span class='badge badge-success'>11-07-2024 23:29:27</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:41</span>
+										<span class='badge badge-default'>0h:0m:14s+637ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:27</td>
+                <td>
+Tests For Email started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:37</td>
+                <td>
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Email']"}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:41</td>
+                <td>
+element click intercepted: Element <button class="bg-[#9747FF] bg-[#808080] py-1 px-5 text-white font-normal text-lg rounded-lg mx-1 cursor-pointer">...</button> is not clickable at point (1444, 120). Other element would receive the click: <div data-testid="overlay" data-popup="modal" class="popup-overlay " tabindex="-1" style="position: fixed; inset: 0px; display: flex; z-index: 999; pointer-events: auto;">...</div>
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="36"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Merge and Move</p> 
+								<p class="duration text-sm">0h:0m:11s+166ms</p> 
+								<span class="datetime">23:29:41 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Merge and Move</h5>
+										<span class='badge badge-success'>11-07-2024 23:29:41</span>
+										<span class='badge badge-danger'>11-07-2024 23:29:53</span>
+										<span class='badge badge-default'>0h:0m:11s+166ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>23:29:41</td>
+                <td>
+Tests For Merge and Move started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>23:29:53</td>
+                <td>
+Error Occured no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Proceed']"}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+        <div class="col-md-12">
+                <div class="card" id=Tests>
+                    <div class="card-header" data-toggle="collapse" data-parent='#Tests-Body' href='#Tests-Body' aria-expanded="True" aria-controls=Tests>
+                        <h6 class="card-title">
+Tests                        </h6>
+                    </div>
+                    <div id='Tests-Body' class="collapse show" aria-labelledby="headingOne" data-parent='#Tests'>
+                        <div class="card-body">
+                            <div class="">
+                                <canvas id='parent-analysis' width='115' height='90'></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <small data-tooltip='97.22222222222221%'>
+                                    <b>35</b> tests passed
+                                </small></div>
+                            <div>
+                                <small data-tooltip='2.7777777777777777%'><b>1</b> tests failed,
+                                    <b data-tooltip='0%'>0</b> others
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+			</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tests</h6>
+                        <h2 class="font-size-28 font-weight-light">36</h2>
+                        <span class="text-semibold text-success font-size-15">
+                            <i class="ti-arrow-up font-size-11"></i> 
+                            <span>97.22%</span>
+                        </span>
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-align-left font-size-70 opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Start</h6>
+                        <h6 class="font-weight-light">11-07-2024 23:05:14</h6>
+                        <span class="text-semibold text-success font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Duration</h6>
+                        <h6 class="font-weight-light">00:24:38.3340770</h6>
+                        <span class="text-semibold text-danger font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body box-height-150">
+                    <div class="media justify-content-between">
+                        <div>
+                            <p class="">Duration</p>
+                            <h6 class="font-weight-light">00:24:42.4636073</h6>
+                            <span class="text-semibold font-size-15"/>
+                        </div>
+                        <div class="align-self-end">
+                            <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+	
+	<div class="row">
+							</div>
+</div>
+<script>
+    var statusGroup = {
+        parentCount: 36,
+        passParent: 35,
+        failParent: 1,
+        fatalParent: 0,
+        errorParent: 0,
+        warningParent: 0,
+        skipParent: 0,
+        exceptionsParent: 1,
+        childCount: 0,
+        passChild: 0,
+        failChild: 0,
+        fatalChild: 0,
+        errorChild: 0,
+        warningChild: 0,
+        skipChild: 0,
+        infoChild: 0,
+        debugChild: 0,
+        exceptionsChild: 0,
+        grandChildCount: 0,
+        passGrandChild: 0,
+        failGrandChild: 0,
+        fatalGrandChild: 0,
+        errorGrandChild: 0,
+        warningGrandChild: 0,
+        skipGrandChild: 0,
+        infoGrandChild: 0,
+        debugGrandChild: 0,
+        exceptionsGrandChild: 0,
+    };
+</script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>

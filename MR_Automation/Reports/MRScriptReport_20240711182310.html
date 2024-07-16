@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa ">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">11-07-2024 18:23:15</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify login functionality with valid credentials.</p> 
+								<p class="duration text-sm">0h:0m:11s+201ms</p> 
+								<span class="datetime">18:23:15 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify login functionality with valid credentials.</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:15</span>
+										<span class='badge badge-danger'>11-07-2024 18:23:26</span>
+										<span class='badge badge-default'>0h:0m:11s+201ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:15</td>
+                <td>
+Verify login functionality with valid credentials.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:20</td>
+                <td>
+Application login page opened successfully.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:21</td>
+                <td>
+Username entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:22</td>
+                <td>
+Password entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:22</td>
+                <td>
+Login button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:24</td>
+                <td>
+Application home page visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:26</td>
+                <td>
+Application user login successful.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="2"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify display of home page header, navigation and project list section</p> 
+								<p class="duration text-sm">0h:0m:0s+669ms</p> 
+								<span class="datetime">18:23:26 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify display of home page header, navigation and project list section</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:26</span>
+										<span class='badge badge-danger'>11-07-2024 18:23:27</span>
+										<span class='badge badge-default'>0h:0m:0s+669ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:26</td>
+                <td>
+Test - Verify the display of home page header, navigation and project list section.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:26</td>
+                <td>
+Application home page is visible.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Header section is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Navigation section is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Project list is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Logo is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Calendar icon is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Home icon is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Profile icon is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:27</td>
+                <td>
+Create project button is visible on the home page.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="3"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the display of home page filter by and sort by dropdown list</p> 
+								<p class="duration text-sm">0h:0m:5s+206ms</p> 
+								<span class="datetime">18:23:27 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the display of home page filter by and sort by dropdown list</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:27</span>
+										<span class='badge badge-danger'>11-07-2024 18:23:32</span>
+										<span class='badge badge-default'>0h:0m:5s+206ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:27</td>
+                <td>
+Test - Verify the display of home page filter by and sort by dropdown list.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:27</td>
+                <td>
+Filter by dropdown is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 8 items as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'All Projects' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Project setup' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Validating' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Processing' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Payment required' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Transcript issue' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Review' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:29</td>
+                <td>
+Filter by dropdown contains 'Reprocessing' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:29</td>
+                <td>
+Sort by dropdown is visible on the home page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:32</td>
+                <td>
+Sort by dropdown contains 3 items as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:32</td>
+                <td>
+Sort by dropdown contains 'Last modified' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:32</td>
+                <td>
+Sort by dropdown contains 'Newest first' as expected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:32</td>
+                <td>
+Sort by dropdown contains 'Oldest first' as expected.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="4"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Verify the home page projects list pagination</p> 
+								<p class="duration text-sm">0h:0m:3s+611ms</p> 
+								<span class="datetime">18:23:32 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Verify the home page projects list pagination</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:32</span>
+										<span class='badge badge-danger'>11-07-2024 18:23:36</span>
+										<span class='badge badge-default'>0h:0m:3s+611ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:32</td>
+                <td>
+Test - Verify the home page projects list pagination.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:23:36</td>
+                <td>
+Project list is visible with pagination.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="5"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Search Project</p> 
+								<p class="duration text-sm">0h:0m:0s+000ms</p> 
+								<span class="datetime">18:23:36 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Search Project</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:36</span>
+										<span class='badge badge-danger'>11-07-2024 18:23:36</span>
+										<span class='badge badge-default'>0h:0m:0s+000ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:36</td>
+                <td>
+Starting test for searching project.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="6"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Review Button</p> 
+								<p class="duration text-sm">0h:0m:8s+721ms</p> 
+								<span class="datetime">18:23:36 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Review Button</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:36</span>
+										<span class='badge badge-danger'>11-07-2024 18:23:45</span>
+										<span class='badge badge-default'>0h:0m:8s+721ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:36</td>
+                <td>
+Starting further tests.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:36</td>
+                <td>
+Search query 'QC_FlowTest_05-06_Test-v10' entered and search initiated.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:38</td>
+                <td>
+Project selected.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:42</td>
+                <td>
+Review button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:45</td>
+                <td>
+Review message found in the top bar.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="7"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Generate and Download PPT</p> 
+								<p class="duration text-sm">0h:1m:49s+366ms</p> 
+								<span class="datetime">18:23:50 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Generate and Download PPT</h5>
+										<span class='badge badge-success'>11-07-2024 18:23:50</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:39</span>
+										<span class='badge badge-default'>0h:1m:49s+366ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:50</td>
+                <td>
+Starting test for generating and downloading PPT.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:50</td>
+                <td>
+Navigated to configure page.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:55</td>
+                <td>
+Generate PPT button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:23:58</td>
+                <td>
+Report name entered: FlowTest_20240711_182356
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:24:02</td>
+                <td>
+Report description entered.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:24:02</td>
+                <td>
+Generate PowerPoint button clicked.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:24:55</td>
+                <td>
+Report generation completed.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:24:55</td>
+                <td>
+Clicked on the report link to download.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:25:03</td>
+                <td>
+File downloaded successfully: C:\Users\Shivam Tewari\Downloads\FlowTest_20240711_182356.pptx
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:04</td>
+                <td>
+home button clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:05</td>
+                <td>
+Entered search string
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:06</td>
+                <td>
+Clicked the search input.
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:07</td>
+                <td>
+Project available for internal review
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:09</td>
+                <td>
+Edit Functionality Opened
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:21</td>
+                <td>
+Added a new project
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:24</td>
+                <td>
+Applied Changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:25:24</td>
+                <td>
+Added the new topic successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:25:39</td>
+                <td>
+All values validated successfully.
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="8"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Entity Type Master</p> 
+								<p class="duration text-sm">0h:0m:8s+839ms</p> 
+								<span class="datetime">18:25:39 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Entity Type Master</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:39</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:48</span>
+										<span class='badge badge-default'>0h:0m:8s+839ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:39</td>
+                <td>
+Tests For Entity Type Master started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:39</td>
+                <td>
+Renaming test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:40</td>
+                <td>
+Renaming box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:40</td>
+                <td>
+New renamed text is :1153707083
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:43</td>
+                <td>
+Applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:25:43</td>
+                <td>
+Successfully changed the name of the entity
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:43</td>
+                <td>
+Deletion test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:43</td>
+                <td>
+Deletion box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:43</td>
+                <td>
+Entity name is :1153707083
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:46</td>
+                <td>
+Applied changes
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:25:48</td>
+                <td>
+Deleted the entity successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>18:25:48</td>
+                <td>
+Deleted the entity successfully
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Merge box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Either not enough elements to merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Multiple changes test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Rename box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Merge rename test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Rename box clicked
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements to merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Started the rename delete test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for merge delete started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+started the switching to home test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+switching to tab test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="9"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Entity Master</p> 
+								<p class="duration text-sm">0h:0m:0s+034ms</p> 
+								<span class="datetime">18:25:48 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Entity Master</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:48</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:48</span>
+										<span class='badge badge-default'>0h:0m:0s+034ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Tests For Entity Master started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for rename started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for deletion started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+checkbox test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elemenst
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for merge started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+starting the move test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for rename delete staretd
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+renaming to 414359604
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for merge rename started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+renaming to 1241324625
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements to merge
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+started the merge delete test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for multiple changes started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for switching to home staretd
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for switching to tab started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+renaming the text
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="10"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Entity Sentences</p> 
+								<p class="duration text-sm">0h:0m:0s+007ms</p> 
+								<span class="datetime">18:25:48 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Entity Sentences</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:48</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:48</span>
+										<span class='badge badge-default'>0h:0m:0s+007ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Tests For Entity Sentences started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for deletion staretd
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for anchor change started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="11"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Theme Master</p> 
+								<p class="duration text-sm">0h:0m:0s+049ms</p> 
+								<span class="datetime">18:25:48 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Theme Master</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:48</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:48</span>
+										<span class='badge badge-default'>0h:0m:0s+049ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Tests For Theme Master started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for renaming started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for merging started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for deletion started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for changing theme started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for user defined property started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements : no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for rename delete started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+renamed to 979406930
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for rename merge started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+renamed text :2048070424
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+started the merge delete test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for multiple changes started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+started the switching to home test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+started the switching tab test
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="12"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Theme Sentences</p> 
+								<p class="duration text-sm">0h:0m:0s+034ms</p> 
+								<span class="datetime">18:25:48 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Theme Sentences</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:48</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:48</span>
+										<span class='badge badge-default'>0h:0m:0s+034ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Tests For Theme Sentences started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+deletion test started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+staretd the changing of theme of a sentence started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements :
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for multiple changes started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for switching to home started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+test for switching tab started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:48</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="13"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Entities </p> 
+								<p class="duration text-sm">0h:0m:4s+019ms</p> 
+								<span class="datetime">18:25:49 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Entities </h5>
+										<span class='badge badge-success'>11-07-2024 18:25:49</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:53</span>
+										<span class='badge badge-default'>0h:0m:4s+019ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:49</td>
+                <td>
+Tests For Summaries Entities started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:49</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:53</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="14"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Themes </p> 
+								<p class="duration text-sm">0h:0m:4s+009ms</p> 
+								<span class="datetime">18:25:53 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Themes </h5>
+										<span class='badge badge-success'>11-07-2024 18:25:53</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:57</span>
+										<span class='badge badge-default'>0h:0m:4s+009ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:53</td>
+                <td>
+Tests For Themes Entities started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:53</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:57</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="15"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Summaries Market </p> 
+								<p class="duration text-sm">0h:0m:1s+015ms</p> 
+								<span class="datetime">18:25:57 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Summaries Market </h5>
+										<span class='badge badge-success'>11-07-2024 18:25:57</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:58</span>
+										<span class='badge badge-default'>0h:0m:1s+015ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:57</td>
+                <td>
+Tests For Summaries Market started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+Not enough elements
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="16"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Report</p> 
+								<p class="duration text-sm">0h:0m:0s+005ms</p> 
+								<span class="datetime">18:25:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Report</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:58</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:58</span>
+										<span class='badge badge-default'>0h:0m:0s+005ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+Tests For Reports started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="pass" author="" device="" tag="" test-id="17"> 
+						<div class="status-avatar pass-bg">
+							<i class="fa fa-check text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Email</p> 
+								<p class="duration text-sm">0h:0m:0s+003ms</p> 
+								<span class="datetime">18:25:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-pass">Email</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:58</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:58</span>
+										<span class='badge badge-default'>0h:0m:0s+003ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+Tests For Email started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="18"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">Merge and Move</p> 
+								<p class="duration text-sm">0h:0m:0s+004ms</p> 
+								<span class="datetime">18:25:58 PM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">Merge and Move</h5>
+										<span class='badge badge-success'>11-07-2024 18:25:58</span>
+										<span class='badge badge-danger'>11-07-2024 18:25:58</span>
+										<span class='badge badge-default'>0h:0m:0s+004ms</span>
+									</div>
+																	</div>
+							</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>18:25:58</td>
+                <td>
+Tests For Merge and Move started
+                </td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>18:25:58</td>
+                <td>
+Error Occured no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+                </td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+        <div class="col-md-12">
+                <div class="card" id=Tests>
+                    <div class="card-header" data-toggle="collapse" data-parent='#Tests-Body' href='#Tests-Body' aria-expanded="True" aria-controls=Tests>
+                        <h6 class="card-title">
+Tests                        </h6>
+                    </div>
+                    <div id='Tests-Body' class="collapse show" aria-labelledby="headingOne" data-parent='#Tests'>
+                        <div class="card-body">
+                            <div class="">
+                                <canvas id='parent-analysis' width='115' height='90'></canvas>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div>
+                                <small data-tooltip='94.44444444444444%'>
+                                    <b>17</b> tests passed
+                                </small></div>
+                            <div>
+                                <small data-tooltip='5.555555555555555%'><b>1</b> tests failed,
+                                    <b data-tooltip='0%'>0</b> others
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+			</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tests</h6>
+                        <h2 class="font-size-28 font-weight-light">18</h2>
+                        <span class="text-semibold text-success font-size-15">
+                            <i class="ti-arrow-up font-size-11"></i> 
+                            <span>94.44%</span>
+                        </span>
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-align-left font-size-70 opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Start</h6>
+                        <h6 class="font-weight-light">11-07-2024 18:23:15</h6>
+                        <span class="text-semibold text-success font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body box-height-150">
+                <div class="media justify-content-between">
+                    <div>
+                        <h6 class="card-title">Duration</h6>
+                        <h6 class="font-weight-light">00:02:43.0204926</h6>
+                        <span class="text-semibold text-danger font-size-15">
+                    </div>
+                    <div class="align-self-end">
+                        <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body box-height-150">
+                    <div class="media justify-content-between">
+                        <div>
+                            <p class="">Duration</p>
+                            <h6 class="font-weight-light">00:02:48.4535730</h6>
+                            <span class="text-semibold font-size-15"/>
+                        </div>
+                        <div class="align-self-end">
+                            <i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+	
+	<div class="row">
+							</div>
+</div>
+<script>
+    var statusGroup = {
+        parentCount: 18,
+        passParent: 17,
+        failParent: 1,
+        fatalParent: 0,
+        errorParent: 0,
+        warningParent: 0,
+        skipParent: 0,
+        exceptionsParent: 1,
+        childCount: 0,
+        passChild: 0,
+        failChild: 0,
+        fatalChild: 0,
+        errorChild: 0,
+        warningChild: 0,
+        skipChild: 0,
+        infoChild: 0,
+        debugChild: 0,
+        exceptionsChild: 0,
+        grandChildCount: 0,
+        passGrandChild: 0,
+        failGrandChild: 0,
+        fatalGrandChild: 0,
+        errorGrandChild: 0,
+        warningGrandChild: 0,
+        skipGrandChild: 0,
+        infoGrandChild: 0,
+        debugGrandChild: 0,
+        exceptionsGrandChild: 0,
+    };
+</script>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
